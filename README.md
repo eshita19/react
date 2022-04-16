@@ -11,7 +11,7 @@
   const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(<App/>)
   ```
-- App.js : Holds the JSX code that is javascript inside html.
+- App.js : Holds the JSX code that is javascript inside html. The JSX code can have only one root element. There should not be multiple parent elements at root level.
   ```
   function App() {
   return (
