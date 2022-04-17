@@ -24,4 +24,8 @@
   export default App;
   ```
   
+- **State Changes:**
+  - The React component can accept special property called "props". We can pass values from parent component to child component using props. It provides One way binding. That is any update made to props object in child component is not reflected.
+  - Use React hook "useState", This provides the state and setter function of state. Whenever setter function is called child component is revaluated.
+  
   
