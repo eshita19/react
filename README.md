@@ -43,6 +43,11 @@
    ```
    {students.map(student => <Student key={student.id} name={student.name} age={student.age} gender={student.gender} />)}
    ```
+- **Conditional display**
+  ```
+  {students.length && students.map(student => <Student key={student.id} name={student.name} age={student.age} gender={student.gender} />)}
+  ```
+   
 
   
   
