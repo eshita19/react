@@ -24,4 +24,39 @@
   export default App;
   ```
   
+- **State Changes:**
+  - The React component can accept special property called "props". We can pass values from parent component to child component. Parent component can set values in Child component's attributes, which will be available as arg to component called as props. It provides One way binding. That is any update made to props object in child component is not reflected.
+  - Use React hook "useState", This provides the state and setter function of state. Whenever setter function is called child component is revaluated.
+  - ```
+     const [expenseAmt, setExpenseAmt] = useState('esh')
+
+    const expenseAmtChangeHandler = (event) => {
+        setExpenseAmt(event.value);
+        props.onExpenseAmtChange(event.target.value);
+    }
+    ```
+  - **Passing data to parent component from child component**:   
+    - Declare an attribute in Child component which takes parent component's function as pointer. Child component can call the callback function to pass the state.
+
+
+- **Rendering List data** 
+   ```
+   {students.map(student => <Student key={student.id} name={student.name} age={student.age} gender={student.gender} />)}
+   ```
+- **Conditional display**
+  ```
+  {students.length && students.map(student => <Student key={student.id} name={student.name} age={student.age} gender={student.gender} />)}
+  ```
+  - If condition - Use javascript AND operator.
+  - If else condition - Use Ternary operator.
+  - Multiple return statement also allowed.
+
+- **Dynamic Styling**
+  - Add dynamic style using "style" attribute in JSX code. "Style" accepts an object of css properties.
+    ```
+     <div style = {{border : '1px solid black', color: color}}> </style>
+    ``` 
+
+  
+  
   
