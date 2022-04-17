@@ -25,7 +25,7 @@
   ```
   
 - **State Changes:**
-  - The React component can accept special property called "props". We can pass values from parent component to child component using props. It provides One way binding. That is any update made to props object in child component is not reflected.
+  - The React component can accept special property called "props". We can pass values from parent component to child component. Parent component can set values in Child component's attributes, which will be available as arg to component called as props. It provides One way binding. That is any update made to props object in child component is not reflected.
   - Use React hook "useState", This provides the state and setter function of state. Whenever setter function is called child component is revaluated.
   - ```
      const [expenseAmt, setExpenseAmt] = useState('esh')
@@ -35,5 +35,9 @@
         props.onExpenseAmtChange(event.target.value);
     }
     ```
+  - **Passing data to parent component from child component**:   
+    - Declare an attribute in Child component which takes parent component's function as pointer. Child component can call the callback function to pass the state.
+
+  
   
   
