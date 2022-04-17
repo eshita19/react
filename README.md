@@ -38,6 +38,12 @@
   - **Passing data to parent component from child component**:   
     - Declare an attribute in Child component which takes parent component's function as pointer. Child component can call the callback function to pass the state.
 
+
+- **Rendering List data** 
+   ```
+   {students.map(student => <Student key={student.id} name={student.name} age={student.age} gender={student.gender} />)}
+   ```
+
   
   
   
