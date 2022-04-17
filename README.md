@@ -47,6 +47,9 @@
   ```
   {students.length && students.map(student => <Student key={student.id} name={student.name} age={student.age} gender={student.gender} />)}
   ```
+  - If condition - Use javascript AND operator.
+  - If else condition - Use Ternary operator.
+  - Multiple return statement also allowed.
    
 
   
