@@ -54,7 +54,8 @@
 - **Dynamic Styling**
   - Add dynamic style using "style" attribute in JSX code. "Style" accepts an object of css properties.
     ```
-     <div style = {{border : '1px solid black', color: color}}> </style>
+     <div style = {{border : isValid? '1px solid black' : '1px solid red', color: color}}> </style>
+     
     ``` 
 
   
