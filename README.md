@@ -1,4 +1,5 @@
 # Bootstrap
+- To create a new react app: npx create-react-app user-form
 - Two main packages of react are **react** and **react-dom**.
 - The starting js and html are index.js and index.html.
 - index.html
