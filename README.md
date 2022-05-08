@@ -62,15 +62,15 @@
   -  We have a limitation of always having only single parent root for all react elements.  This can be overcome by wrapping the React JSX code with  `Fragements` instead of having explicit `div`.
   -  ```
      render() {
-      return (
-        <React.Fragment>
-          <ChildA />
-          <ChildB />
-          <ChildC />
-        </React.Fragment>
-      );
-    }
-    ```
+        return (
+          <React.Fragment>
+            <ChildA />
+            <ChildB />
+            <ChildC />
+          </React.Fragment>
+        );
+      }
+     ```
     
 
   
