@@ -84,6 +84,15 @@
         );
       }
     ```
+- **Refs**
+  - React Refs can be used to get reference of an element's dom rendered in the component.
+  - ```
+     const inputElement = useRef();
+     //inputElement.focus() => Focus on element
+     //inputElement.current.value => Get the value of the element
+     <input type="text" ref={inputElement} />
+    ```  
+    
      
     
 
