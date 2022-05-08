@@ -71,6 +71,10 @@
         );
       }
      ```
+- **Portals** 
+  - Portals provide a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
+  - Normally, when you return an element from a component’s render method, it’s mounted into the DOM as a child of the nearest parent node. However, sometimes it’s useful to insert a child into a different location in the DOM.    
+     
     
 
   
