@@ -97,10 +97,10 @@
    - useEffect function runs once the component is rendered and each time the dependencies mentioned in array changes.
    - useEffect can be used to avoid continious loop as directly using setState() function during component initialization will cause infinite loop.
    - Example:
-     ```
+      ```
      useEffect( () => {if(localStorage.getItem("user")){
-    setUser({...user, uName: localStorage.getItem("user")});
-  }}, [])
+          setUser({...user, uName: localStorage.getItem("user")});
+        }}, [])
       ```
     
      
