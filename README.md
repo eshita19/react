@@ -102,6 +102,10 @@
           setUser({...user, uName: localStorage.getItem("user")});
         }}, [])
       ```
+- **useReducer**:
+  - [useReducer](https://dmitripavlutin.com/react-usereducer/) can be used to update complex state objects based on actions.
+  -       
+      
     
      
     
