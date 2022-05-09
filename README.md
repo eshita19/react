@@ -101,7 +101,7 @@
      useEffect( () => {if(localStorage.getItem("user")){
     setUser({...user, uName: localStorage.getItem("user")});
   }}, [])
-     ```
+      ```
     
      
     
