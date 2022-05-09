@@ -92,8 +92,16 @@
      //inputElement.current.value => Get the value of the element
      <input type="text" ref={inputElement} />
     ```  
-- **Custom Hooks**:
-   -      
+- **useEffect**:
+   - Use effect can be used to execute all Side effects( Logic which is outside React context - For example initailizing model from API response, Settign some other variable based on form state).
+   - useEffect function runs once the component is rendered and each time the dependencies mentioned in array changes.
+   - useEffect can be used to avoid continious loop as directly using setState() function during component initialization will cause infinite loop.
+   - Example:
+     ```
+     useEffect( () => {if(localStorage.getItem("user")){
+    setUser({...user, uName: localStorage.getItem("user")});
+  }}, [])
+     ```
     
      
     
