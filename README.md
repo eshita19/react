@@ -104,7 +104,8 @@
       ```
 - **useReducer**:
   - [useReducer](https://dmitripavlutin.com/react-usereducer/) can be used to update complex state objects based on actions.
-  -       
+  
+- **React Zustand**:
       
     
      
